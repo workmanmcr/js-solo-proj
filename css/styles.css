@@ -1,0 +1,7 @@
+#error-message {
+  font-weight: 600; 
+  color: red;
+}
+.hidden {
+  display: none;
+}
