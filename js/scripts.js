@@ -19,12 +19,12 @@ window.onload = function () {
     if (IQ || Pets || Tacos) { 
     if (IQ <= 85 || Pets <= 5 || Tacos <= 10 ) {
       document.getElementById("Ruby").removeAttribute("class"); 
-    } else if (IQ > 85 < 45 || Pets > 5 < 2 || Tacos > 10 < 4 ) {
+    } else if (IQ > 85 && IQ < 45)||(Pets > 5 && Pets < 3)||( Tacos > 10 && Tacos < 4) {
       document.getElementById("C-sharp").removeAttribute("class");  
-    } else if (IQ >= 45 || Pets >= 2 || Tacos >= 4 ) {
+    } else if (IQ >=45 )||(Pets >=3 )||( Tacos >= 4) {
       document.getElementById("Python").removeAttribute("class");
     } else {
       document.getElementById("sorry").removeAttribute("class");
     }
      };
-  
+    };
