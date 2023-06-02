@@ -1,9 +1,9 @@
 // User Interface Logic
 
 function hideResults() {
-  document.getElementById("swings").setAttribute("class", "hidden");
-  document.getElementById("coaster").setAttribute("class", "hidden");
-  document.getElementById("tower").setAttribute("class", "hidden");
+  document.getElementById("Ruby").setAttribute("class", "hidden");
+  document.getElementById("C#").setAttribute("class", "hidden");
+  document.getElementById("Python").setAttribute("class", "hidden");
   document.getElementById("sorry").setAttribute("class", "hidden");
 }
 
@@ -13,16 +13,16 @@ window.onload = function() {
     hideResults();
     const age = parseInt(document.querySelector("input#age").value);
     const height = parseInt(document.querySelector("input#height").value);
-    if (age >= 12 && height >= 60) {
-      document.getElementById("swings").removeAttribute("class");
-      document.getElementById("coaster").removeAttribute("class");
-      document.getElementById("tower").removeAttribute("class");
+    if (IQ >= 65 && Pets >= 2) {
+      document.getElementById("Ruby").removeAttribute("class");
+      document.getElementById("C#").removeAttribute("class");
+      document.getElementById("Python").removeAttribute("class");
     
-    } else if (age >= 12 || height >= 48) {
-      document.getElementById("swings").removeAttribute("class");
-      document.getElementById("coaster").removeAttribute("class");
-    } else if (age >= 6) {
-      document.getElementById("swings").removeAttribute("class");
+    } else if (IQ >= 75 || Pets >= 3) {
+      document.getElementById("Ruby").removeAttribute("class");
+      document.getElementById("C#").removeAttribute("class");
+    } else if (IQ >= 85) {
+      document.getElementById("Ruby").removeAttribute("class");
       // Finally, we have our "catch-all" for when a user is less than 6 years old.
     } else {
       document.getElementById("sorry").removeAttribute("class");
