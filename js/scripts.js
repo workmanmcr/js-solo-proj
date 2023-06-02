@@ -1,8 +1,8 @@
 function hideResultsAndError() {
-  document.getElementById("error-message").removeAttribute("class", "hidden");
-  document.getElementById("Ruby").setAttribute("class", "hidden");
-  document.getElementById("C-sharp").setAttribute("class", "hidden");
-  document.getElementById("Python").setAttribute("class", "hidden");
+  document.getElementById("error-message").classList.add("hidden");
+  document.getElementById("Ruby").classList.add("hidden");
+  document.getElementById("C-sharp").classList.add("hidden");
+  document.getElementById("Python").classList.add("hidden");
 }
 
 window.onload = function () {
@@ -16,16 +16,16 @@ window.onload = function () {
     const Pets = parseInt(document.querySelector("input#Pets").value);
     const Tacos = parseInt(document.querySelector("input#Tacos").value);
     
-    if (IQ || Pets || Tacos) { 
-      if (IQ >= 85 || Pets >= 5 || Tacos >= 10 ) {
-        document.getElementById("Ruby").removeAttribute("class"); 
-      } else if ((IQ < 85 && IQ > 45) || (Pets < 5 && Pets > 2) || (Tacos < 10 && Tacos > 4)) {
-        document.getElementById("C-sharp").removeAttribute("class");  
-      } else if (IQ <= 45 || Pets <= 2 || Tacos <= 4 ) {
-        document.getElementById("Python").removeAttribute("class");
-      }
+    if (isNaN(IQ) || isNaN(Pets) || isNaN(Tacos)) {
+      document.getElementById("error-message").classList.remove("hidden");
     } else {
-      document.getElementById("error-message").removeAttribute("class");
+      if (IQ >= 85 && Pets >= 2 && Tacos >= 4 ) {
+        document.getElementById("Ruby").classList.remove("hidden"); 
+      } else if ((IQ <= 85 && IQ >= 65) && (Pets <= 5 && Pets >= 2) && (Tacos <= 10 && Tacos >= 4)) {
+        document.getElementById("C-sharp").classList.remove("hidden");  
+      } else if (IQ <= 65 && Pets <= 2 && Tacos <= 2 ) {
+        document.getElementById("Python").classList.remove("hidden");
+      }
     }
   };
 };
