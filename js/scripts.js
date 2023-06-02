@@ -1,4 +1,5 @@
 function  hideResultsAndError() {
+  console.log("sarah");
   document.getElementById("error-message").removeAttribute("class", "hidden")
   document.getElementById("Ruby").setAttribute("class", "hidden");
   document.getElementById("C-sharp").setAttribute("class", "hidden");
@@ -11,6 +12,7 @@ window.onload = function () {
 
   document.querySelector("form").onsubmit = function(event) {
   hideResultsAndError();
+  console.log("poop");
     event.preventDefault();
     const IQ = parseInt(document.querySelector("input#IQ").value);
     const Pets = parseInt(document.querySelector("input#Petst").value);
@@ -27,8 +29,6 @@ window.onload = function () {
       document.getElementById("Python").removeAttribute("class");
     } else {
       document.getElementById("sorry").removeAttribute("class");
-    } else {
-      document.getElementById("error-message").removeAttribute("class");
-      }
+    
     };
   };
