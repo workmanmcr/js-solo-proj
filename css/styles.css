@@ -6,3 +6,15 @@
   font-weight: 600; 
   color: red;
 }
+body {
+  background-image:url('https://media.tenor.com/7RDsyQVEiFUAAAAd/jim-carrey-hello.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+.style {
+  color: red;
+  
+}
