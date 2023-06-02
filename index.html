@@ -2,46 +2,47 @@
 <html lang="en-US">
 <head>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <title>What progrmaing language fits you?</title>
+  <script src="js/scripts.js"></script>
+  <title>What kind of code fits you</title>
 </head>
 <body>
   <div>
-    <h1>Take this short quizz and find out!</h1>
-    <p>Fill out the empty boxes below to learn what programig language fits you.</p>
-    <p>Once you have filled out the boxes, hit submit and find out your results.</p>
+    <h1>What type of code language fits you?</h1>
+
+    <p>fill out this short survey to find out.  </p>
+    <p> After filling out the boxes below hit the "Show me my language" button</p>
 
     <form id="userInfo">
-      <label for="question1">what is your favorite star wars movie</label>
-      <input id="question1" type="text" name="answer1">
-      <label for="question2">who is your favorite starars character</label>
-      <input id="question2" type="text" name="answer2">
-      <label for="question3">What is your favorite star wars character</label>
-      <input id="question3" type="text" name="answer3">
-      <label for="question4">why is it Boba Fett?</label>
-      <input id="question4" type="text" name="answer4">
-      <label for="question5"></label>
-      <input id="question5" type="text" name="answer5">
-      <button type="submit">Show me what I can ride!</button>
+      <label for="IQ">what is your IQ?</label>
+      <input id="IQ" type="text" name="IQ">
+      <label for="Pets">How many pets do you own?</label>
+      <input id="Pets" type="text" name="Pets">
+      <label for="pushups">How many push ups can you do?</label>
+      <input id="pushups" type="text" name="pushups">
+      <label for="Tacos">How many Tacos can you eat?</label>
+      <input id="Tacos" type="text" name="Tacos">
+      <label for="Number">What is your favorite number? </label>
+      <input id="Number" type="text" name="Number">
+
+      <button type="submit">show me my language</button>
     </form>
 
-    <div id="swings" class="hidden">
-      <h1>You can ride the Swings.</h1>
-      <p>To ride the Swings you need to be at least 6 years old.</p> 
+    <div id="Ruby" class="hidden">
+      <h1>You should use Ruby!!!</h1>
+      <p> you have a decent grasp on understanding code!</p> 
     </div>
-    <div id="coaster" class="hidden">
+    <div id="C#" class="hidden">
       <h1>You can ride the Roller Coaster.</h1>
       <p>To ride the Roller Coaster you need to be either 12 years old or 48 or more inches tall.</p> 
     </div>
-    <div id="tower" class="hidden">
+    <div id="Pyhton" class="hidden">
       <h1>You can ride the Tower of Doom.</h1>
       <p>To ride the Tower of Doom you need to be at least 12 years old and 60 or more inches tall.</p> 
     </div>
     <div id="sorry" class="hidden">
       <h1>You are too young to ride! Sorry!</h1>
       <p>Come back when you are 6 years old.</p> 
-
     </div>
   </div>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
