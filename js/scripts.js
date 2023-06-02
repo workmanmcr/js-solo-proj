@@ -7,24 +7,25 @@ function hideResults() {
   document.getElementById("sorry").setAttribute("class", "hidden");
 }
 
-window.onload = function() {
+window.onsubmit = function() 
   document.querySelector("form").onsubmit = function(event) {
-    event.preventDefault();
     hideResults();
-    const age = parseInt(document.querySelector("input#age").value);
-    const height = parseInt(document.querySelector("input#height").value);
-    if (IQ >= 65 && Pets >= 2) {
-      document.getElementById("Ruby").removeAttribute("class");
-      document.getElementById("C#").removeAttribute("class");
-      document.getElementById("Python").removeAttribute("class");
-    
-    } else if (IQ >= 75 || Pets >= 3) {
-      document.getElementById("Ruby").removeAttribute("class");
-      document.getElementById("C#").removeAttribute("class");
-    } else if (IQ >= 85) {
-      document.getElementById("Ruby").removeAttribute("class");
+    event.preventDefault();
+
+    const IQ = parseInt(document.querySelector("input#IQ").value);
+    const Pets = parseInt(document.querySelector("input#Petst").value);
+    const Pushups = parseInt(document.querySelector("input#Pushups").value);
+    const Tacos = parseInt(document.querySelector("input#Tacos").value);
+    const Num = parseInt(document.querySelector("input#Num").value);
+
+    if (IQ >= 85 || Pets >= 5 || Pushups >= 20 || Tacos >= 10 || Num >= 1) {
+      document.getElementById("Ruby").removeAttribute("class"); 
+    } else if (IQ >= 65 || Pets >= 3 || Pushups >= 15 || Tacos >= 5 || Num >= 1) {
+      document.getElementById("C#").removeAttribute("class");  
+    } else if (IQ >= 45 || Pets >= 2 || Pushups >= 10 || Tacos >= 4 || Num >= 1) {
+      document.getElementById("Pyhton").removeAttribute("class");
       // Finally, we have our "catch-all" for when a user is less than 6 years old.
     } else {
       document.getElementById("sorry").removeAttribute("class");
     };
-};
+  };
