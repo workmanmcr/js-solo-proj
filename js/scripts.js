@@ -1,5 +1,4 @@
 function  hideResultsAndError() {
-  console.log("sarah");
   document.getElementById("error-message").removeAttribute("class", "hidden")
   document.getElementById("Ruby").setAttribute("class", "hidden");
   document.getElementById("C-sharp").setAttribute("class", "hidden");
@@ -12,23 +11,20 @@ window.onload = function () {
 
   document.querySelector("form").onsubmit = function(event) {
   hideResultsAndError();
-  console.log("poop");
-    event.preventDefault();
+  
     const IQ = parseInt(document.querySelector("input#IQ").value);
-    const Pets = parseInt(document.querySelector("input#Petst").value);
-    const Pushups = parseInt(document.querySelector("input#Pushups").value);
+    const Pets = parseInt(document.querySelector("input#Pets").value);
     const Tacos = parseInt(document.querySelector("input#Tacos").value);
-    const Num = parseInt(document.querySelector("input#Num").value);
-
-    if (IQ || Pets || Pushups || Tacos || num) { 
-    if (IQ >= 85 || Pets >= 5 || Pushups >= 20 || Tacos >= 10 || Num >= 1) {
+    
+    if (IQ || Pets || Tacos) { 
+    if (IQ <= 85 || Pets <= 5 || Tacos <= 10 ) {
       document.getElementById("Ruby").removeAttribute("class"); 
-    } else if (IQ >= 65 || Pets >= 3 || Pushups >= 15 || Tacos >= 5 || Num >= 1) {
+    } else if (IQ > 85 < 45 || Pets > 5 < 2 || Tacos > 10 < 4 ) {
       document.getElementById("C-sharp").removeAttribute("class");  
-    } else if (IQ >= 45 || Pets >= 2 || Pushups >= 10 || Tacos >= 4 || Num >= 1) {
+    } else if (IQ >= 45 || Pets >= 2 || Tacos >= 4 ) {
       document.getElementById("Python").removeAttribute("class");
     } else {
       document.getElementById("sorry").removeAttribute("class");
-    
-    };
-  };
+    }
+     };
+  
