@@ -2,7 +2,7 @@
 .hidden {
   display: none;
 }
-#error-message {
+#oops {
   font-size: x-large;
   font-weight: 600; 
   color: red;

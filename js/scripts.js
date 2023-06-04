@@ -1,5 +1,5 @@
 function hideResultsAndError() {
-  document.getElementById("error-message").classList.add("hidden");
+  document.getElementById("oops").classList.add("hidden");
   document.getElementById("Ruby").classList.add("hidden");
   document.getElementById("C-sharp").classList.add("hidden");
   document.getElementById("Python").classList.add("hidden");
@@ -17,7 +17,7 @@ window.onload = function () {
     const Tacos = parseInt(document.querySelector("input#Tacos").value);
     
     if (isNaN(IQ) || isNaN(Pets) || isNaN(Tacos)) {
-      document.getElementById("error-message").classList.remove("hidden");
+      document.getElementById("oops").classList.remove("hidden");
     } else {
       if (IQ >= 85 && Pets >= 2 && Tacos >= 4 ) {
         document.getElementById("Ruby").classList.remove("hidden"); 
