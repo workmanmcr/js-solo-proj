@@ -21,9 +21,9 @@ window.onload = function () {
     } else {
       if (IQ >= 85 && Pets >= 2 && Tacos >= 4 ) {
         document.getElementById("Ruby").classList.remove("hidden"); 
-      } else if ((IQ <= 85 && IQ >= 65) && (Pets <= 5 && Pets >= 2) && (Tacos <= 10 && Tacos >= 4)) {
+      } else if ((IQ <= 85 && IQ >= 65) && (Pets >= 2) && (Tacos >= 3)) {
         document.getElementById("C-sharp").classList.remove("hidden");  
-      } else if (IQ <= 65 && Pets <= 2 && Tacos <= 2 ) {
+      } else if (IQ <= 65 || Pets <= 0 || Tacos <= 0 ) {
         document.getElementById("Python").classList.remove("hidden");
       }
     }
