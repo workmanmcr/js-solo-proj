@@ -6,7 +6,7 @@ Mike Workman
 
 Description: A fun interactive web site that allows you to take a short survey and find out what coding language best fits your needs.
 
-gh-pages- workmanmcr.github.io/js-solo-proj
+[gh-pages-](workmanmcr.github.io/js-solo-proj)
 
 technologies used:
 HTML
